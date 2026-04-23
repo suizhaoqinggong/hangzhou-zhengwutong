@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>街道委员小组详情 | 杭州政委通</title>
+    <meta
+      name="description"
+      content="杭州政委通街道委员小组详情页。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand-block" href="./index.html">
+          <span class="brand-mark">HZ</span>
+          <div>
+            <p class="brand-eyebrow">上城区政协履职与协商实践平台</p>
+            <h1 class="brand-name">杭州政委通</h1>
+          </div>
+        </a>
+        <nav class="topnav" aria-label="主导航">
+          <a href="./index.html">首页</a>
+          <a class="is-current" href="./streets.html">街道委员小组</a>
+          <a href="./studios.html">委员工作室</a>
+          <a href="./index.html#practice">协商实践</a>
+          <a href="./index.html#docs">资料中心</a>
+        </nav>
+        <div class="clock-panel">
+          <span class="clock-label">数据看板</span>
+          <strong id="live-time">2026年4月23日</strong>
+        </div>
+      </header>
+
+      <main id="street-detail-page">
+        <section class="page-hero page-hero--detail reveal">
+          <div class="breadcrumb">
+            <a href="./index.html">首页</a>
+            <span>/</span>
+            <a href="./streets.html">街道委员小组</a>
+            <span>/</span>
+            <strong id="street-breadcrumb">详情页</strong>
+          </div>
+
+          <div class="detail-hero">
+            <div class="detail-copy">
+              <p class="section-kicker">街道详情</p>
+              <h2 id="street-title">正在加载街道信息</h2>
+              <p class="section-note" id="street-summary">
+                正在读取街道基础信息、关联工作室和协商实践案例。
+              </p>
+              <div class="metric-strip metric-strip--detail" id="street-detail-stats"></div>
+              <div class="hero-actions" id="street-detail-actions"></div>
+            </div>
+            <div class="detail-media" id="street-detail-media"></div>
+          </div>
+        </section>
+
+        <section class="section-block reveal">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">街道概览</p>
+              <h2>街道阵地与履职重点</h2>
+            </div>
+          </div>
+          <div class="detail-columns">
+            <article class="info-card">
+              <h3>街道说明</h3>
+              <div class="content-stack" id="street-overview"></div>
+            </article>
+            <article class="info-card">
+              <h3>基础信息</h3>
+              <div class="info-list" id="street-info-list"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block reveal">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">街道重点</p>
+              <h2>履职矩阵与协同机制</h2>
+            </div>
+          </div>
+          <div class="narrative-grid" id="street-focus-grid"></div>
+        </section>
+
+        <section class="section-block reveal">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">图组展示</p>
+              <h2>街道活动现场</h2>
+            </div>
+          </div>
+          <div class="gallery-grid" id="street-gallery-grid"></div>
+          <div class="empty-mini" id="street-gallery-empty" hidden>当前街道暂未匹配到图片资料。</div>
+        </section>
+
+        <section class="section-block reveal">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">履职安排</p>
+              <h2>服务对象与年度方向</h2>
+            </div>
+          </div>
+          <div class="detail-columns">
+            <article class="info-card">
+              <h3>重点服务对象</h3>
+              <ul class="bullet-list" id="street-service-list"></ul>
+            </article>
+            <article class="info-card">
+              <h3>年度工作方向</h3>
+              <ul class="bullet-list" id="street-agenda-list"></ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block reveal">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">关联工作室</p>
+              <h2>街道工作室名录</h2>
+            </div>
+          </div>
+          <div class="studio-grid studio-grid--directory" id="street-studio-grid"></div>
+          <div class="empty-mini" id="street-studio-empty" hidden>当前街道暂未匹配到工作室。</div>
+        </section>
+
+        <section class="section-block reveal">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">协商案例</p>
+              <h2>相关实践案例</h2>
+            </div>
+          </div>
+          <div class="practice-grid" id="street-practice-grid"></div>
+          <div class="empty-mini" id="street-practice-empty" hidden>当前街道暂未匹配到协商案例。</div>
+        </section>
+
+        <section class="section-block reveal">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">资料入口</p>
+              <h2>街道相关资料</h2>
+            </div>
+          </div>
+          <div class="docs-grid docs-grid--compact" id="street-resource-grid"></div>
+        </section>
+
+        <section class="empty-state reveal" id="street-not-found" hidden>
+          <p>没有找到对应的街道记录。</p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>杭州政委通原型站点</p>
+        <p>街道委员小组详情页。</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./street-detail.js"></script>
+  </body>
+</html>

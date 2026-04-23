@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>街道委员小组 | 杭州政委通</title>
+    <meta
+      name="description"
+      content="杭州政委通街道委员小组页，支持查看14个街道与对应履职阵地。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand-block" href="./index.html">
+          <span class="brand-mark">HZ</span>
+          <div>
+            <p class="brand-eyebrow">上城区政协履职与协商实践平台</p>
+            <h1 class="brand-name">杭州政委通</h1>
+          </div>
+        </a>
+        <nav class="topnav" aria-label="主导航">
+          <a href="./index.html">首页</a>
+          <a class="is-current" href="./streets.html">街道委员小组</a>
+          <a href="./studios.html">委员工作室</a>
+          <a href="./index.html#practice">协商实践</a>
+          <a href="./index.html#docs">资料中心</a>
+        </nav>
+        <div class="clock-panel">
+          <span class="clock-label">数据看板</span>
+          <strong id="live-time">2026年4月23日</strong>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero reveal">
+          <div class="page-hero__intro">
+            <p class="section-kicker">街道目录</p>
+            <h2>14 个街道委员小组，连到工作室、案例和计划资料。</h2>
+            <p class="section-note">
+              这个目录页承接街道入口，进入后可查看街道概况、关联工作室、相关协商案例和年度资料。
+            </p>
+            <div class="hero-actions">
+              <a class="card-link" href="./index.html">返回首页</a>
+              <a class="ghost-link" href="../data/2. 街道委员小组/14个街道.pdf">打开街道资料</a>
+            </div>
+          </div>
+          <aside class="page-hero__side">
+            <div class="metric-strip metric-strip--stack" id="street-directory-stats"></div>
+          </aside>
+        </section>
+
+        <section class="section-block reveal">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">街道检索</p>
+              <h2>浏览街道履职图谱</h2>
+            </div>
+            <p class="section-note" id="street-directory-count">正在加载街道数据</p>
+          </div>
+
+          <div class="toolbar-grid">
+            <label class="field field--wide">
+              <span>关键词</span>
+              <input id="street-search" type="search" placeholder="搜索街道名称、召集人或履职重点" />
+            </label>
+          </div>
+
+          <div class="street-grid street-grid--directory" id="street-directory-grid"></div>
+        </section>
+
+        <section class="empty-state reveal" id="street-directory-empty" hidden>
+          <p>没有找到匹配的街道委员小组。</p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>杭州政委通原型站点</p>
+        <p>街道目录页已接入街道详情跳转。</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./streets.js"></script>
+  </body>
+</html>

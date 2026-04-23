@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>委员工作室名录 | 杭州政委通</title>
+    <meta
+      name="description"
+      content="杭州政委通委员工作室名录页，支持按街道与履职主题筛选。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand-block" href="./index.html">
+          <span class="brand-mark">HZ</span>
+          <div>
+            <p class="brand-eyebrow">上城区政协履职与协商实践平台</p>
+            <h1 class="brand-name">杭州政委通</h1>
+          </div>
+        </a>
+        <nav class="topnav" aria-label="主导航">
+          <a href="./index.html">首页</a>
+          <a href="./streets.html">街道委员小组</a>
+          <a class="is-current" href="./studios.html">委员工作室</a>
+          <a href="./index.html#practice">协商实践</a>
+          <a href="./index.html#docs">资料中心</a>
+        </nav>
+        <div class="clock-panel">
+          <span class="clock-label">数据看板</span>
+          <strong id="live-time">2026年4月23日</strong>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero reveal">
+          <div class="page-hero__intro">
+            <p class="section-kicker">工作室名录</p>
+            <h2>50 家委员工作室，统一收进同一套检索和详情流。</h2>
+            <p class="section-note">
+              这里是平台正式站点的第一层目录页。可按街道、履职主题和关键词筛选，并继续进入单个工作室详情。
+            </p>
+            <div class="hero-actions">
+              <a class="card-link" href="./index.html">返回首页</a>
+              <a
+                class="ghost-link"
+                href="../data/5. 委员履职平台/1.2026上城区政协委员工作室名单(按成立顺序).xlsx"
+                >打开原始名单</a
+              >
+            </div>
+          </div>
+          <aside class="page-hero__side">
+            <div class="metric-strip metric-strip--stack" id="studio-directory-stats"></div>
+          </aside>
+        </section>
+
+        <section class="section-block reveal">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">目录检索</p>
+              <h2>按街道、主题和关键词浏览</h2>
+            </div>
+            <p class="section-note" id="studio-directory-count">正在加载工作室数据</p>
+          </div>
+
+          <div class="toolbar-grid">
+            <label class="field">
+              <span>关键词</span>
+              <input id="studio-search" type="search" placeholder="搜索工作室名称、负责人或地址" />
+            </label>
+            <label class="field">
+              <span>街道</span>
+              <select id="street-filter"></select>
+            </label>
+            <label class="field">
+              <span>履职主题</span>
+              <select id="category-filter"></select>
+            </label>
+          </div>
+
+          <div class="studio-grid studio-grid--directory" id="studio-directory-grid"></div>
+        </section>
+
+        <section class="empty-state reveal" id="studio-directory-empty" hidden>
+          <p>当前筛选条件下没有匹配的工作室。</p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>杭州政委通原型站点</p>
+        <p>委员工作室名录页已接入详情跳转。</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./studios.js"></script>
+  </body>
+</html>

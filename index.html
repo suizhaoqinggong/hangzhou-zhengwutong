@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>杭州政委通</title>
+    <meta
+      name="description"
+      content="杭州政委通，上城区政协履职与协商实践平台首页原型。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand-block" href="./index.html">
+          <span class="brand-mark">HZ</span>
+          <div>
+            <p class="brand-eyebrow">上城区政协履职与协商实践平台</p>
+            <h1 class="brand-name">杭州政委通</h1>
+          </div>
+        </a>
+        <nav class="topnav" aria-label="主导航">
+          <a class="is-current" href="./index.html">首页</a>
+          <a href="./streets.html">街道委员小组</a>
+          <a href="./studios.html">委员工作室</a>
+          <a href="#practice">协商实践</a>
+          <a href="#docs">资料中心</a>
+        </nav>
+        <div class="clock-panel">
+          <span class="clock-label">数据看板</span>
+          <strong id="live-time">2026年4月23日</strong>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy reveal">
+            <p class="kicker">平台型首页原型</p>
+            <h2>把委员履职、街道协商、界别活动和年度计划收进同一个工作台。</h2>
+            <p class="hero-summary">
+              首页以“履职平台”为主入口，汇集
+              <strong>50个委员工作室</strong>、<strong>14个街道委员小组</strong>、
+              <strong>16个界别</strong>和新时代协商民主实践案例，强调查找、分发、浏览和资料联动。
+            </p>
+
+            <form class="search-panel" role="search">
+              <label class="sr-only" for="search-input">搜索平台内容</label>
+              <input
+                id="search-input"
+                type="search"
+                placeholder="搜索工作室、街道、界别或案例"
+                autocomplete="off"
+              />
+              <span id="search-count" class="search-count">已加载 44 个内容单元</span>
+            </form>
+
+            <div class="metric-strip" id="metrics"></div>
+          </div>
+
+          <aside class="hero-board reveal">
+            <div class="board-card board-priority">
+              <div class="board-head">
+                <span class="board-label">工作台焦点</span>
+                <a href="#studios">进入履职平台</a>
+              </div>
+              <h3>基层延伸覆盖，形成常态化协商与服务闭环。</h3>
+              <p>
+                依据现有资料，首页优先承接委员工作室、街道协商、界别活动和年度计划四类高频入口。
+              </p>
+              <ul class="board-list">
+                <li>委员工作室全覆盖，支持按街道和主题浏览</li>
+                <li>双分中心案例并置展示，强化实践矩阵识别度</li>
+                <li>资料中心直接联通 PDF、DOCX、XLSX 原始文件</li>
+              </ul>
+            </div>
+
+            <div class="board-card board-actions">
+              <div class="board-head">
+                <span class="board-label">快捷动作</span>
+                <span class="board-mini">首页建议保留</span>
+              </div>
+              <div class="action-grid" id="quick-actions"></div>
+            </div>
+          </aside>
+
+          <div class="hero-media reveal">
+            <figure class="media-large">
+              <img
+                data-src="../data/4. 市政协新时代协商民主实践 - 上城分中心/分中心/彭埠1-市政协新时代协商民主实践中心矩阵建设座谈会在实践中心上城区分中心召开，市政协毛溪浩副主席参加.webp"
+                alt="上城区实践分中心协商活动现场"
+              />
+            </figure>
+            <figure class="media-small media-top">
+              <img
+                data-src="../data/5. 委员履职平台/1-政协湖滨小组委员工作室-学习考察新质生产力一-万事利科创中心.webp"
+                alt="委员工作室现场照片"
+              />
+            </figure>
+            <figure class="media-small media-bottom">
+              <img
+                data-src="../data/3. 界别基本情况/活动照片/5妇联/妇联界别开展“品宋韵文化  做精致丽人”三八节活动.webp"
+                alt="界别活动现场照片"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section class="section-block reveal" id="modules">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">平台入口</p>
+              <h2>七大业务入口</h2>
+            </div>
+            <p class="section-note">
+              首页首屏之后直接进入模块导航，既能承担平台导流，也能承接领导调阅时的内容总览。
+            </p>
+          </div>
+          <div class="module-grid" id="module-grid"></div>
+        </section>
+
+        <section class="section-block reveal" id="streets">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">街道履职图谱</p>
+              <h2>14 个街道委员小组</h2>
+            </div>
+            <div class="section-note-stack">
+              <p class="section-note">
+                用清晰的街道入口替代资料堆叠，方便快速定位委员小组和履职点位。
+              </p>
+              <a class="section-action" href="./streets.html">查看街道详情</a>
+            </div>
+          </div>
+          <div class="street-grid" id="street-grid"></div>
+        </section>
+
+        <section class="section-block reveal" id="studios">
+          <div class="section-head section-head-stack">
+            <div>
+              <p class="section-kicker">履职平台</p>
+              <h2>委员工作室精选</h2>
+            </div>
+            <div class="section-note-stack">
+              <p class="section-note">
+                按主题筛选典型工作室案例，让首页既能看见活动现场，也能快速触达真实阵地。
+              </p>
+              <a class="section-action" href="./studios.html">查看全部 50 家工作室</a>
+            </div>
+          </div>
+          <div class="filter-bar" id="studio-filters"></div>
+          <div class="studio-grid" id="studio-grid"></div>
+        </section>
+
+        <section class="section-block reveal" id="sectors">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">界别矩阵</p>
+              <h2>16 个界别活动单元</h2>
+            </div>
+            <p class="section-note">
+              把界别从文档附录变成可点击的矩阵卡片，支持按界别浏览活动照片和简介资料。
+            </p>
+          </div>
+          <div class="sector-grid" id="sector-grid"></div>
+        </section>
+
+        <section class="section-block reveal" id="practice">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">协商实践</p>
+              <h2>分中心案例流</h2>
+            </div>
+            <p class="section-note">
+              突出彭埠、紫阳两大分中心案例，把“协商民主实践”从单页材料提升为首页的重要板块。
+            </p>
+          </div>
+          <div class="practice-grid" id="practice-grid"></div>
+        </section>
+
+        <section class="section-block reveal" id="docs">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">资料中心</p>
+              <h2>年度计划与原始资料</h2>
+            </div>
+            <p class="section-note">
+              首页底部直接保留资料入口，减少“找附件”的跳转成本，适合内部平台使用习惯。
+            </p>
+          </div>
+          <div class="docs-grid" id="docs-grid"></div>
+        </section>
+
+        <section class="empty-state reveal" id="empty-state" hidden>
+          <p>没有匹配结果，请换一个关键词。</p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>杭州政委通原型页</p>
+        <p>基于本地素材目录生成，适合继续扩展为正式首页或内容门户。</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
